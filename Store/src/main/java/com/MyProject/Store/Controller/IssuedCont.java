@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.MyProject.Store.Models.Issued;
 import com.MyProject.Store.Repository.IssuedRepo;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/api/is")
-
+@CrossOrigin
 public class IssuedCont {
     @Autowired
     public IssuedRepo issuedRepo;
